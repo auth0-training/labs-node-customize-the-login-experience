@@ -1,0 +1,24 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "1: Customize the login experience",
+  "steps": [
+    {
+      "file": "README.md",
+      "line": 1,
+      "title": "What you'll do"
+      "description": "staged"
+    },
+    {
+      "file": "README.md",
+      "line": 1,
+      "title": "Practice customizing login",
+      "description": "staged"
+    },
+    {
+      "file": "README.md",
+      "line": 1,
+      "title": "Recap",
+      "description": "staged"
+    }
+  ]
+}
