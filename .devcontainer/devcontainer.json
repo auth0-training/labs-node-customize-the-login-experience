@@ -15,7 +15,7 @@
 	"extensions": [
 		"dbaeumer.vscode-eslint",
 		"EditorConfig.EditorConfig",
-    	"esbenp.prettier-vscode",
+    "esbenp.prettier-vscode",
 		"hjb2012.vscode-es6-string-html",
 		"vsls-contrib.codetour",
 		"mikestead.dotenv",
@@ -23,7 +23,9 @@
 		],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [],
+	"forwardPorts": [
+    7000
+  ],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// Use this to install dependencies for the lab only
