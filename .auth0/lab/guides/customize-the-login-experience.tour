@@ -5,20 +5,35 @@
     {
       "file": "README.md",
       "line": 1,
-      "title": "What you'll do",
-      "description": "staged"
+      "description": "## What you'll learn\n\n**Here's what you'll do:**\n\n* Customize the branding of your Universal Login using the Dashboard\n* Work with the Classic Login Script JavaScript\n* Explore additional Classic Login script templates\n* Customize the branding of your Universal Login using the Management API\n* Customize Sign-Up page with additional user fields"
     },
     {
       "file": "README.md",
       "line": 1,
-      "title": "Practice customizing login",
+      "title": "Customize branding using the New Login Experience",
       "description": "staged"
+    },
+    {
+      "title": "Explore the Classic Login Javascript",
+      "description": ""
+    },
+    {
+      "title": "Explore the Classic Login templates",
+      "description": ""
+    },
+    {
+      "title": "Change branding using the Management API",
+      "description": ""
+    },
+    {
+      "title": "Customize the Sign-Up page with additional user fields",
+      "description": ""
     },
     {
       "file": "README.md",
       "line": 1,
       "title": "Recap",
-      "description": "staged"
+      "description": "\n**In this lab you:**\n\n*   Customized the branding of your Universal Login using the Dashboard.\n*   Worked with the Classic Login Script JavaScript to define your branding.\n*   Explored additional Classic Login script templates to review additional login customization opportunities.\n*   Retrieved the current branding configuration using the Management API explorer.\n*   Customized the branding of your Universal Login using the Management API explorer.\n*   Customized the Sign-Up page to capture additional user fields."
     }
   ]
 }
