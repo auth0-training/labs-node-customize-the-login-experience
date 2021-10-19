@@ -1,17 +1,17 @@
 {
-  "name": "labs-node-oidc-authentication-trace",
+  "name": "labs-node-customize-the-login-experience",
   "version": "1.0.0",
   "private": true,
   "description": "Auth0 Labs Sample Web Application",
   "license": "MIT",
   "author": "Auth0",
   "bugs": {
-    "url": "https://github.com/auth0-training/labs-node-oidc-authentication-trace/issues"
+    "url": "https://github.com/auth0-training/labs-node-customize-the-login-experience/issues"
   },
-  "homepage": "https://github.com/auth0-training/labs-node-oidc-authentication-trace#readme",
+  "homepage": "https://github.com/auth0-training/labs-node-customize-the-login-experience#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/auth0-training/labs-node-oidc-authentication-trace.git"
+    "url": "git+https://github.com/auth0-training/labs-node-customize-the-login-experience.git"
   },
   "scripts": {
     "start": "PORT=$npm_package_config_port SESSION_SECRET=$npm_package_config_session_secret node index"
@@ -31,12 +31,12 @@
     "labs"
   ],
   "dependencies": {
-    "axios": "^0.21.4",
+    "axios": "^0.23.0",
     "cookie-parser": "~1.4.5",
     "debug": "~4.3.2",
     "dotenv": "10.0.0",
     "express": "^4.17.1",
-    "express-openid-connect": "^2.5.0",
+    "express-openid-connect": "^2.5.1",
     "express-session": "^1.17.2",
     "http-errors": "~1.8.0",
     "morgan": "~1.10.0",
