@@ -1,30 +1,28 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.191.1/containers/javascript-node
 {
-	"name": "labs-node-customize=the-login-experience",
+  "name": "labs-node-customize=the-login-experience",
   "dockerComposeFile": "docker-compose.yml",
   "service":"lab",
   "workspaceFolder": "/workspace",
   "settings": {},
 
-	// Add the IDs of extensions you want installed when the container is created.
-	"extensions": [
-		"dbaeumer.vscode-eslint",
-		"EditorConfig.EditorConfig",
+  // Add the IDs of extensions you want installed when the container is created.
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "EditorConfig.EditorConfig",
     "esbenp.prettier-vscode",
-		"hjb2012.vscode-es6-string-html",
-		"vsls-contrib.codetour",
-		"mikestead.dotenv",
-		"auth0.vscode-labs",
+    "hjb2012.vscode-es6-string-html",
+    "vsls-contrib.codetour",
+    "mikestead.dotenv",
+    "auth0.vscode-labs",
     "humao.rest-client",
-		],
-
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [
+  ],
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [
     7000
   ],
-
-	"shutdownAction": "stopCompose",
+  "shutdownAction": "stopCompose",
   "postCreateCommand": "npm run init",
   "remoteUser": "node"
 }
