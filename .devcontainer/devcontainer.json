@@ -20,7 +20,7 @@
   ],
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": [
-    7000
+    37500
   ],
   "shutdownAction": "stopCompose",
   "postStartCommand": "npm run init",
