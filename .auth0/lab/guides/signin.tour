@@ -1,6 +1,7 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
   "title": "0: signin",
+  "nextTour": "1: Customize the login experience",
   "steps": [
     {
       "file": "README.md",
