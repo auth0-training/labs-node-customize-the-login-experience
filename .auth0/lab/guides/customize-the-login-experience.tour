@@ -5,7 +5,7 @@
     {
       "file": "",
       "line": 1,
-      "description": "## What you'll learn\n\n* Customize the branding of your Universal Login using the New Universal Login Experience\n* Use JavaScript to modify the Classic Universal Login experience\n* Explore additional Classic Universal Login templates\n* Customize the branding of your Universal Login using the Management API\n* Customize Sign-Up page with additional user fields"
+      "description": "## What you'll learn\n\n* Customize the branding of your Universal Login using Universal Login.\n* Use JavaScript to modify Classic Login.\n* Explore additional Classic Login templates.\n* Customize the branding of Universal Login using the Management API\n* Customize Sign-Up page with additional user fields."
     },
     {
       "file": "",
