@@ -2,7 +2,7 @@
 
 This [Okta Training](https://www.okta.com/training/) hands-on lab walks learners through customization of the login experience. They'll learn how to customize both the universal login and classic login pages.
 
-[## Requirements
+## Requirements
 
 1. A GitHub account with Codespaces access (you can use the free plan, which gives you 60 hours of use per month). Create a free account [here](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account).
 
