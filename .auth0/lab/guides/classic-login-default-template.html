@@ -37,7 +37,13 @@
 
     // Available Lock configuration options: https://auth0.com/docs/libraries/lock/v11/configuration
     var lock = new Auth0Lock(config.clientID, config.auth0Domain, {
-      auth: {
+    additionalSignUpFields: [
+    { name: 'given_name', placeholder: 'First Name', storage: 'root' },
+    { name: 'family_name', placeholder: 'Last Name', storage: 'root' },
+     { name: 'band', placeholder: 'What band are you in?' },
+    { name: 'instrument', placeholder: 'What instrument do you play?' }
+    ],
+          auth: {
         redirectUrl: config.callbackURL,
         responseType: (config.internalOptions || {}).response_type ||
           (config.callbackOnLocationHash ? 'token' : 'code'),
@@ -55,7 +61,7 @@
       languageBaseUrl: config.languageBaseUrl,
       languageDictionary: languageDictionary,
       theme: {
-        //logo:            'YOUR LOGO HERE',
+    logo: 'https://openmoji.org/data/color/svg/1F984.svg',
         primaryColor:    colors.primary ? colors.primary : 'green'
       },
       prefill: loginHint ? { email: loginHint, username: loginHint } : null,
