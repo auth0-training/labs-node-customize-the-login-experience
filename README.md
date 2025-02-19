@@ -1,6 +1,6 @@
 # Lab: Customize Auth0 Universal Login
 
-This [Okta Training](https://www.okta.com/training/) hands-on lab walks learners through customization of the login experience. They'll learn how to customize both the universal login and classic login pages.
+This [Okta Learning](https://learning.okta.com/) hands-on lab walks learners through customization of the login experience. They'll learn how to customize both the universal login and classic login pages.
 
 ## Requirements
 
