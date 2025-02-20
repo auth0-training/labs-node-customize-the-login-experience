@@ -37,7 +37,7 @@
 
     // Available Lock configuration options: https://auth0.com/docs/libraries/lock/v11/configuration
     var lock = new Auth0Lock(config.clientID, config.auth0Domain, {
-      auth: {
+          auth: {
         redirectUrl: config.callbackURL,
         responseType: (config.internalOptions || {}).response_type ||
           (config.callbackOnLocationHash ? 'token' : 'code'),
@@ -55,7 +55,7 @@
       languageBaseUrl: config.languageBaseUrl,
       languageDictionary: languageDictionary,
       theme: {
-        //logo:            'YOUR LOGO HERE',
+    // logo: 'YOUR LOGO HERE',
         primaryColor:    colors.primary ? colors.primary : 'green'
       },
       prefill: loginHint ? { email: loginHint, username: loginHint } : null,
