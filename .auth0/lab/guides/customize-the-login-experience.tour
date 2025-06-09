@@ -5,7 +5,7 @@
     {
       "file": "",
       "line": 1,
-      "description": "## What you'll learn\n\n* Customize the branding of your Auth0 tenant's login page using Universal Login.\n* Customize the branding of Universal Login using the Management API\n* Customize Sign-Up page with additional user fields."
+      "description": "## What you'll learn\n\n* Customize the branding of Universal Login through the Auth0 Management Dashboard.\n* View and update the branding of Universal Login using the Auth0 Management API."
     },
     {
       "title": "Preview current branding",
@@ -34,8 +34,12 @@
       "description": "## View your branding changes\n\nLet's take a look at the branding changes we just made.\n\n1. From the left menu, select **Authentication** > **Authentication Profile**.\n2. Select the **Try** button at the top right of the screen.\n\n >A new tab will open, showing you a preview of your login page. You should see the changes you just made take effect.\n\n![view the login experience](https://cdn.auth0.com/website/auth0-training/universal-login-page.png)   \n\n1. In your browser, view the login page source:\n\n    ```\n    Chrome: Control+U / Option+Command+U  \n    Firefox: Control+U / Command+U  \n    Safari: Option+Command+U  \n    ```  \n\n1. Scroll through the page source. \n    >Note that this page does not load any JavaScript libraries: Everything you see in the Universal Login experience is generated on the server, unlike the older Classic Login.  \n    >Note that Classic Login is no longer recommended."
     },
     {
+      "title": "Explore more customization options",
+      "description": "## Explore more customization options\n\nYou can explore even more customization options by selecting **Customization options** from the **Branding** > **Universal Login** page. You can update the colors of even more UI elements, specify a custom font, adjust border styles of certain UI elements, adjust your logo's size and position, and specify a background image for your Universal Login page. We encourage you to explore the possibilities!"
+    },
+    {
       "title": "Set up Auth0 Management API Explorer",
-      "description": "## Set up Auth0 Management Explorer\n\nThere are other branding operations you can perform with the Auth0 Management API. Let's investigate these options using Auth0's API Explorer. First we'll set up the API Explorer and then we will request our current branding settings from the Management API.\n\n\n1.  In the Dashboard, go to the **Applications** > **APIs**. \n1. In your list of APIs, Select **Auth0 Management API**. \n>The Settings page for the Auth0 Management API is displayed.  \n1.  Select the **API Explorer** tab.  \n1.  Select the **Copy Token** icon on the right of your Access Token.  \n1.  Select the **Documentation** link at the top of your Dashboard, and select Management API from the dropdown list. \n>The Management API Explorer page is opened in a new browser tab. This page allows us to try out all the endpoints exposed by the Management API.\n1.  Select **Set API Token** in the top right corner of the page. \n1. In the popup, paste_your token into the **API Token** field, and select **Set Token**.  \n>The Management API Explorer now shows the _Domain, API Token,_ and _Allowed Scopes_ for your tenant.  \n\n**IMPORTANT: You will stay on this page for the next step!**"
+      "description": "## Set up Auth0 Management Explorer\n\nYou can also update your branding settings programmatically using the Auth0 Management API. We'll use the Auth0 API Explorer, which is a tool meant for non-production tenants that makes interacting with the Auth0 Management API simple! \n\nFirst we'll set up the API Explorer, and then we will request our current branding settings from the Auth0 Management API.\n\n\n1.  In the Dashboard, go to the **Applications** > **APIs**. \n1. In your list of APIs, Select **Auth0 Management API**. \n>The Settings page for the Auth0 Management API is displayed.  \n1.  Select the **API Explorer** tab.  \n1.  Select the **Copy Token** icon on the right of your Access Token.  \n1.  Select the **Documentation** link at the top of your Dashboard, and select Management API from the dropdown list. \n>The Management API Explorer page is opened in a new browser tab. This page allows us to try out all the endpoints exposed by the Management API.\n1.  Select **Set API Token** in the top right corner of the page. \n1. In the popup, paste_your token into the **API Token** field, and select **Set Token**.  \n>The Management API Explorer now shows the _Domain, API Token,_ and _Allowed Scopes_ for your tenant.  \n\n**IMPORTANT: You will stay on this page for the next step!**"
     },
     {
       "file": "README.md",
@@ -75,7 +79,7 @@
       "file": "README.md",
       "line": 1,
       "title": "Recap",
-      "description": "\n**In this lab you:**\n\n*   Customized the branding of your login page using the Universal Login.\n*   Retrieved the current branding configuration using the Management API Explorer.\n*   Customized the branding of your Universal Login using the Management API Explorer.\n*   Customized the Sign-Up page to capture additional user fields."
+      "description": "\n**In this lab you:**\n\n*   Customized the branding of your Universal Login through the Auth0 Management Dashboard.\n*   Retrieved the current branding configuration using the Auth0 Management API.\n*   Customized the branding of your Universal Login using the Auth0 Management API.\n"
     }
   ]
 }
