@@ -5,17 +5,17 @@
     {
       "file": "",
       "line": 1,
-      "description": "## What you'll learn\n\n* Customize the branding of Universal Login through the Auth0 Management Dashboard.\n* View and update the branding of Universal Login using the Auth0 Management API."
+      "description": "## What you'll learn\n\n* Customize the branding settings of Universal Login through the Auth0 Management Dashboard.\n* View the branding settings of Universal Login using the Auth0 Management API."
     },
     {
       "title": "Preview current branding",
-      "description": "## Preview current branding\n \n Before we update the branding of the login page, let's remind ourselves of what the current branding looks like.\n\n 1. Log in to your Auth0 Management Dashboard and ensure you are on your *dev-* tenant.\n 2. From the left menu, select **Authentication** > **Authentication Profile**.\n 3. Select the **Try** button at the top right of the screen.\n\n >A new tab will open, showing you a preview of your login page. After reviewing this page, you can close the tab."
+      "description": "## Preview current branding\n \n Before we update the branding of the login page, let's remind ourselves of what the current branding looks like.\n\n 1. Log in to your Auth0 Management Dashboard and ensure you are on your **dev-** tenant.\n 2. From the left menu, select **Authentication** > **Authentication Profile**.\n 3. Select the **Try** button at the top right of the screen.\n\n >A new tab will open, showing you a preview of your login page. After reviewing this page, you can close the tab."
     },
     {
       "file": "",
       "line": 1,
       "title": "Customize branding using the New Login Experience",
-      "description": "## Customize the branding on the login page using Universal Login\n\nNow let's change the logo and theme colors for the login page.\n\n1. From the left menu on the Auth0 Management Dashboard, go to **Branding** > **Universal Login**.\n\n1. Set the *Company Logo* to: [https://cdn.auth0.com/website/auth0-training/1F984.svg](https://cdn.auth0.com/website/auth0-training/1F984.svg)\n\n1. Set the *Primary Color* to: `#9933ff`\n\n1. Set the *Page Background Color* to: `#92d3f5`   \n\n1. Select the **Save** button.\n",
+      "description": "## Customize the branding on the login page using Universal Login\n\nNow let's change the logo and theme colors for the login page.\n\n1. From the Auth0  Dashboard, go to **Branding** > **Universal Login**.\n\n1. Set the **Company Logo** to: `https://cdn.auth0.com/website/auth0-training/1F984.svg`\n\n1. Set the **Primary Color** to: `#9933ff`\n\n1. Set the **Page Background Color** to: `#92d3f5`   \n\n1. **Save** these changes.\n",
       "selection": {
         "start": {
           "line": 37,
@@ -39,13 +39,13 @@
     },
     {
       "title": "Set up Auth0 Management API Explorer",
-      "description": "## Set up Auth0 Management Explorer\n\nYou can also update your branding settings programmatically using the Auth0 Management API. We'll use the Auth0 API Explorer, which is a tool meant for non-production tenants that makes interacting with the Auth0 Management API simple! \n\nFirst we'll set up the API Explorer, and then we will request our current branding settings from the Auth0 Management API.\n\n\n1.  In the Dashboard, go to the **Applications** > **APIs**. \n1. In your list of APIs, Select **Auth0 Management API**. \n>The Settings page for the Auth0 Management API is displayed.  \n1.  Select the **API Explorer** tab.  \n1.  Select the **Copy Token** icon on the right of your Access Token.  \n1.  Select the **Documentation** link at the top of your Dashboard, and select API Explorers from the dropdown list. \n>The API Explorer page is opened in a new browser tab. This page allows us to try out all the endpoints exposed by Auth0 APIs.\n1. Go to **Management API**. \n1.  Select **Set API Token** in the top right corner of the page. \n1. In the popup, paste_your token into the **API Token** field, and select **Set Token**.  \n>The Management API Explorer now shows the _Domain, API Token,_ and _Allowed Scopes_ for your tenant.  \n\n**IMPORTANT: You will stay on this page for the next step!**"
+      "description": "## Prepare to use the Management API Explorer\n\nYou can also update your branding settings programmatically using the Auth0 Management API. We'll use the Auth0 API Explorer, which is a tool meant for non-production tenants that makes interacting with the Auth0 Management API simple! \n\nFirst we'll set up the API Explorer, and then we will request our current branding settings from the Auth0 Management API.\n\n1. From the Auth0 Dashboard, go to **Applications** > **APIs**.\n>The APIs list view is displayed. Notice that an API already exists for your tenant, the **Auth0 Management API**.\n>The Management API is a system API with an identifier of `https://{yourTenantName}.{yourRegion}.auth0.com/api/v2`.\n\n1. Select **Auth0 Management API**.\n>Note the warning alerting you to the fact this is an Auth0 API and cannot be modified or deleted.\n\n1. Select the **API Explorer** tab.\n\n1. If you've never used the Management API Explorer before, you will see a **Create & Authorize Test Application** button here. Select that button.\n\n1. Next to the **Token** field, select the **Copy** icon to copy the value.\n>Note that this token includes all the scopes that are granted to the API Explorer Application, so by default it can invoke ALL the Management API endpoints. It should NOT be used on production environments.\n\n1. Review the instructions under the Using this token in the API Explorer section.\n\n1. Select the link listed in the first step of this section to open the Management API Explorer.\n"
     },
     {
       "file": "README.md",
       "line": 1,
       "title": "View branding settings with the Auth0 Management API",
-      "description": "## View branding settings with the Auth0 Management API\n\n\n1.  On the same page you just set your API token on, scroll down until you see the left-hand navigation menu. \n\n1. Locate **Branding** (You may want to use _CTRL+F_ or _CMD+F_ to search the page for _Branding_) \n\n1. Select **Branding** to reveal its available methods.\n\n1. Select the **Get branding settings** link to view the documentation for this endpoint. \n\n1. Review the documentation for the **Get branding settings** endpoint. It is a `GET` request to `/api/v2/branding`.\n\n1. On the right-hand side, under **Response Sample** you see the schema for the JSON response you will receive upon successful completion.   \n\n1. Select **Test Endpoint**. The result of the GET `/api/v2/branding` call is displayed and if you get a 200 response code, and the body contains the current branding configuration that will look similar to this:  \n\n    ```json\n        {\n            \"colors\": {\n                \"page_background\": \"#92d3f5\",\n                \"primary\": \"#9933ff\"\n            },\n            \"logo_url\": \"https://cdn.auth0.com/website/auth0-training/1F984.svg\"\n        }\n    ```        \n",
+      "description": "## View branding settings with the Auth0 Management API\n\n1. From the Management API Resource page, locate and select **Branding** from the left navigation.\n\n1. Select **Get branding settings**.\n> Notice that this issues a `GET` request to the `/api/v2/branding` endpoint, and retrieves branding settings for a tenant.\n\n1. Select the **Try it** button.\n\n1. Paste the API token you copied previously in the **Authorization** field next to **Bearer**.\n\n1. Enter your tenant URL into the **tenantDomain** field **without https://**. You can see this information at the bottom of this Codespace window after **Auth0:**.\n\n1. Select the **Send** button to issue the request.\n> You will get a 200 (Success) response with JSON data that represents your current branding settings.\n\n1. Examine the response. You should see the settings you applied earlier in the Auth0 Dashboard:\n\n    ```json\n        {\n            \"colors\": {\n                \"page_background\": \"#92d3f5\",\n                \"primary\": \"#9933ff\"\n            },\n            \"logo_url\": \"https://cdn.auth0.com/website/auth0-training/1F984.svg\"\n        }\n    ```        \n",
       "selection": {
         "start": {
           "line": 94,
@@ -58,28 +58,10 @@
       }
     },
     {
-      "title": "Update branding settings with the Auth0 Management API",
-      "description": "## Update branding settings with the Auth0 Management API\n\n\n1. Select **Update branding settings** in the left-hand navigation and review the documentation for the PATCH request to `/api/v2/branding`.  \n\n1. Copy the JSON below and paste it into the **Body** field (replacing what was in the field by default):  \n\n    ```json\n        {\n            \"colors\": {\n                \"primary\": \"#B499C8\",\n                \"page_background\": \"#E9AD56\"\n            },\n            \"logo_url\": \"https://openmoji.org/data/color/svg/1F490.svg\",\n            \"font\": {\n                \"url\": \"https://fonts.gstatic.com/s/tangerine/v12/Iurd6Y5j_oScZZow4VO5srNZi5FNym499g.woff2\"\n            }\n        }\n    ```\n\n1. Select **Test Endpoint**. \n    The result of the PATCH `/api/v2/branding` request is displayed and if you get a 200 response code, the body will look similar to this:  \n\n    ```json\n        {\n            \"colors\": {\n                \"page_background\": \"#E9AD56\",\n                \"primary\": \"#B499C8\"\n            },\n            \"font\": {\n                \"url\": \"https://fonts.gstatic.com/s/tangerine/v12/Iurd6Y5j_oScZZow4VO5srNZi5FNym499g.woff2\"\n            },\n            \"logo_url\": \"https://openmoji.org/data/color/svg/1F490.svg\"\n        }\n    ```\n\n1. To test the branding changes, switch back to the Auth0 dashboard tab and select **Authentication** > **Authentication Profile**.\n1. Select the **Try** button at the top right of the screen to verify the brand changes. \n1. You can close the login box tab once you have verified the branding changes.\n\n"
-    },
-    {
-      "title": "Revert to previous branding",
-      "description": "## Revert to previous branding\nTo revert the changes, lets issue another PATCH `/api/v2/branding` request to **Update branding settings**.  \n\n1.  Copy the JSON below and paste it into the **Body** field:  \n\n    ```json\n        {\n            \"colors\": {\n                \"primary\": \"#9933ff\",\n                \"page_background\": \"#92d3f5\"\n            },\n            \"logo_url\": \"https://cdn.auth0.com/website/auth0-training/1F984.svg\",\n            \"font\": null\n        }\n    ```\n\n1. Select **Test Endpoint**. \n>The result of the `PATCH /api/v2/branding` request is displayed and if you get a 200 response code, the body will look similar to this:  \n\n    ```json\n        {\n            \"colors\": {\n                \"page_background\": \"#92d3f5\",\n                \"primary\": \"#ea5a47\"\n            },\n            \"logo_url\": \"https://cdn.auth0.com/website/auth0-training/1F984.svg\"\n        }\n    ```\n\n1. To test the branding changes, switch back to the Auth0 dashboard tab and select **Authentication** > **Authentication Profile**.\n1. Select the **Try** button at the top right of the screen to verify the brand changes. \n1. You can close the login box tab once you have verified the branding changes have been reverted.\n",
-      "selection": {
-        "start": {
-          "line": 30,
-          "character": 4
-        },
-        "end": {
-          "line": 30,
-          "character": 8
-        }
-      }
-    },
-    {
       "file": "README.md",
       "line": 1,
       "title": "Recap",
-      "description": "\n**In this lab you:**\n\n*   Customized the branding of your Universal Login through the Auth0 Management Dashboard.\n*   Retrieved the current branding configuration using the Auth0 Management API.\n*   Customized the branding of your Universal Login using the Auth0 Management API.\n"
+      "description": "\n**In this lab you:**\n\n*   Customized the branding of your Universal Login through the Auth0 Management Dashboard.\n*   Retrieved the current branding configuration using the Auth0 Management API.\n"
     }
   ]
 }
