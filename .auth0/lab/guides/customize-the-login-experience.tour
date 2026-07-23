@@ -35,7 +35,7 @@
     },
     {
       "title": "Explore more customization options",
-      "description": "## Explore more customization options\n\nYou can explore even more customization options by selecting **Customization options** from the **Branding** > **Universal Login** page. You can update the colors of even more UI elements, specify a custom font, adjust border styles of certain UI elements, adjust your logo's size and position, and specify a background image for your Universal Login page. We encourage you to explore the possibilities!"
+      "description": "## Explore more customization options\n\nYou can explore even more customization options on the **Branding** > **Universal Login** page.\n\nWith the **No-code customizations**, you can update the colors of even more UI elements, specify a custom font, adjust border styles of certain UI elements, adjust your logo's size and position, and specify a background image for your Universal Login page. You can also edit text and translations. With the **Pro-code customizations**, you can add custom HTML, fields, and layouts for a truly customized experience.\n\nWe encourage you to explore the possibilities!"
     },
     {
       "title": "Set up Auth0 Management API Explorer",
